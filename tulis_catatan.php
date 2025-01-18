@@ -28,7 +28,6 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">
-                    
                     <i class="fa fa-save"></i> SIMPAN</button>
                 <button type="reset" class="btn btn-danger"><i class="fa fa-trash"></i> HAPUS</button>
             </div>

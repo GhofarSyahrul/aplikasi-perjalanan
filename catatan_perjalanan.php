@@ -18,6 +18,7 @@
                         <th>Waktu</th>
                         <th>Lokasi</th>
                         <th>Suhu</th>
+                        <th>EDIT</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,6 +49,9 @@
                                 <td><?= $value['waktu'] ?></td>
                                 <td><?= $value['lokasi'] ?></td>
                                 <td><?= $value['suhu'] ?>℃</td>
+                                <td>
+                                    <a href="?url=edit_catatan&id_catatan=<?= $value['id_catatan']; ?>" class="btn btn-info btn-sm"><i class="fa fa-pen fa-xs"></i> Edit</a>
+                                </td>
                             </tr>
                             <?php
                         }
