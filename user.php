@@ -71,5 +71,3 @@ if (empty($_SESSION['nik'])) {
         <!-- End of Content Wrapper -->
 
 <?php include 'layouts/footer.php'; ?>
-</body>
-</html>

@@ -45,7 +45,6 @@ $value = mysqli_fetch_array($query);
                 <button type="submit" class="btn btn-primary">
                     
                     <i class="fa fa-save fa-sm"></i> SIMPAN</button>
-                <button type="reset" class="btn btn-danger"><i class="fa fa-trash fa-sm"></i> HAPUS</button>
             </div>
         </form
     </div>

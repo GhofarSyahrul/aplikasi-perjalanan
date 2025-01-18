@@ -6,11 +6,11 @@
             </span>
             <span class="text">Kembali</span>
         </a>
-        </a>
     </div>
+    
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>No</th>
@@ -18,7 +18,8 @@
                         <th>Waktu</th>
                         <th>Lokasi</th>
                         <th>Suhu</th>
-                        <th>EDIT</th>
+                        <th class="bg-info text-dark" style="width: 12%;>EDIT</th>
+                        <!-- <th class="bg-danger text-white">HAPUS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,8 +50,13 @@
                                 <td><?= $value['waktu'] ?></td>
                                 <td><?= $value['lokasi'] ?></td>
                                 <td><?= $value['suhu'] ?>℃</td>
-                                <td>
-                                    <a href="?url=edit_catatan&id_catatan=<?= $value['id_catatan']; ?>" class="btn btn-info btn-sm"><i class="fa fa-pen fa-xs"></i> Edit</a>
+                                <td class="">
+                                    <a href="?url=edit_catatan&id_catatan=<?= $value['id_catatan']; ?>" class="btn btn-info">
+                                    <i class="fa fa-pen fa-xs"></i> Edit</a>
+                                    <a onclick="return confirm('Yakin ingin hapus catatan perjalanannmu?')"
+                                        href="hapus_catatan.php?id_catatan= <?= $value['id_catatan']; ?>"
+                                        class="btn btn-danger">
+                                        <i class="fa fa-trash fa-xs"></i> Hapus</a>
                                 </td>
                             </tr>
                             <?php
@@ -59,7 +65,6 @@
                         echo "Session NIK tidak ditemukan.";
                     }
                     ?>
-
                 </tbody>
             </table>
         </div>
