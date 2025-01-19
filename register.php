@@ -7,7 +7,7 @@
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
-            <div class="col-xl-7 col-lg-12 col-md-9">
+            <div class="col-xl-7 col-lg-12 col-md-10">
 
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
@@ -20,9 +20,7 @@
                                     </div>
                                     <form class="user" method="post" action="proses_regist.php">
                                         <div class="form-group">
-                                            <input type="text" name="nik" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Silahkan masukan nomor nik kamu!" required>
+                                            <input type="number" name="nik" class="form-control form-control-user" placeholder="Silahkan masukan nomor nik kamu!" required>
                                         </div>
                                         <div class="form-group">
                                             <input type="text" name="nama_lengkap" class="form-control form-control-user"
